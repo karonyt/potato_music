@@ -1,24 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang=”ja”>
 <head>
+<meta charset=”UTF-8″>
+<title>瓶割り</title>
 </head>
 <body>
-<p>
-<span onclick="showimg1()">[img1]</span>　
-<span onclick="showimg2()">[img2]</span>　
-</p>
-<p>
-<img src="images/img1.png" id="area1" alt="説明図" />
-</p>
-<script type="text/javascript">
-function showimg1(){
-     document.getElementById("area1").src = "images/img1.png";
-}
-function showimg2(){
-     document.getElementById("area1").src = "images/img2.png";
-}
-function showimg3(){
-     document.getElementById("area1").src = "images/img3.png";
-}
-</script>
+    <p></p>
+    <img id=”image_file” src=”bottle.png” onclick=”henkou()”>
+
+    <script>
+      var img_src = new Array(”bottle_break.png”);
+      var i = 0;
+
+      function henkou() {
+
+        if (i == 1) {
+          i = 1;
+        } else {
+          i ++;
+        }
+        document.getElementById(“image_file”).src = img_src[i];
+      }
+
+    </script>
+
 </body>
 </html>
