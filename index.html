@@ -2,19 +2,30 @@
 <html lang="ja">
     
 <head>
-    <title>瓶割り</title>
+    <title>除夜の鐘</title>
 </head>
                
 <body>
-    <p></p>
-    <img id="image_file" src="bottle.png" alt="" onclick="henkou()" height="100%" width="100%">
+    <p><font size="5">鳴らした回数は
+<span id="press-button">0</span>回
+</font></p>
+    <img id="image_file" src="joya.png" alt="" onclick="henkou()" height="100%" width="100%">
 
     <script>
-      var img_src = new Array("bottle_break.png");
+      var count = 0
+      var img_src = new Array("boom.png");
       function henkou() {
-        const music = new Audio('wareru.mp3');
-        music.play();
-        document.getElementById("image_file").src = img_src;
+        count++;
+        document.getElementById("press-button").innerHTML = count;
+        if(count < 108){
+          const music = new Audio('gone.mp3');
+          music.play();
+        }
+        if(count == 108){
+          const music2 = new Audio('boom.mp3');
+          music2.play();
+          document.getElementById("image_file").src = img_src;
+        }
       }
     </script>
 
