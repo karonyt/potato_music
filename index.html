@@ -21,8 +21,9 @@
           count++;
           const music = new Audio('gone.mp3');
           music.play();
+          document.getElementById("press-button").innerHTML = count;
         }
-        document.getElementById("press-button").innerHTML = count;
+        
         if(count == 108){
           const music2 = new Audio('boom.mp3');
           music2.play();
