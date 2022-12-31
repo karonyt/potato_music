@@ -9,15 +9,16 @@
     <p><font size="5">鳴らした回数は
 <span id="press-button">0</span>回
 </font></p>
-    <img id="image_file" src="joya.png" alt="" onclick="henkou()" height="100%" width="100%">
+    <img id="image_file" src="joya.png" alt="" onclick="henkou()" height="50%" width="50%">
 
     <script>
       var count = 0
       var img_src = new Array("boom.png");
       function henkou() {
-        count++;
+        
         document.getElementById("press-button").innerHTML = count;
         if(count < 108){
+          count++;
           const music = new Audio('gone.mp3');
           music.play();
         }
