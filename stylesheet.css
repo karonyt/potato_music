@@ -1,4 +1,4 @@
-mainArea {
+image_file {
     width: 300px;
     margin-bottom: 18px;
     padding:2px;
@@ -6,6 +6,6 @@ mainArea {
     text-align: center;
 }
 
-mainArea img {
+image_file {
     width: 60%;
 }
