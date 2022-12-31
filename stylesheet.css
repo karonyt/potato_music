@@ -1,7 +1,11 @@
-.content {
-width:500px;
+#mainArea {
+    width: 300px;
+    margin-bottom: 18px;
+    padding:2px;
+    border : solid 1px;
+    text-align: center;
 }
 
-.content img {
-wifth: 80%:
+#mainArea img {
+    width: 60%;
 }
