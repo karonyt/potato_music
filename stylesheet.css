@@ -1,5 +1,5 @@
 #mainArea {
-    width: 300px;
+    width: 100%;
     margin-bottom: 18px;
     padding:2px;
     border : solid 1px;
@@ -7,5 +7,5 @@
 }
 
 #mainArea img {
-    width: 60%;
+    width: 80%;
 }
