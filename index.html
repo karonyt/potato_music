@@ -3,33 +3,17 @@
     
 <head>
     <title>除夜の鐘</title>
-    <link rel="stylesheet" href="https://karonyt.github.io/joya_kane/stylesheet.css" />
+    <link rel="stylesheet" href="https://karonyt.github.io/potato/stylesheet.css" />
 </head>
                
 <body>
     <div id="mainArea">
-    <p align="center"><font size="10" >鳴らした回数は
-<span id="press-button">0</span>回
-</font></p>
-    <img id="image_file" src="joya.png" alt="" onclick="henkou()">
+    <img id="image_file" src="potato.png" alt="" onclick="henkou()">
 
     <script>
-      var count = 0
-      var img_src = new Array("boom.png");
-      function henkou() {
-        if(count < 108){
-          count++;
+        function henkou(){
           const music = new Audio('gone.mp3');
           music.play();
-          document.getElementById("press-button").innerHTML = count;
-        }
-        
-        if(count == 108){
-          const music2 = new Audio('boom.mp3');
-          music2.play();
-          document.getElementById("image_file").src = img_src;
-          count++;
-        }
         
       }
     </script>
